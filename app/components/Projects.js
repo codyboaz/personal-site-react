@@ -25,25 +25,25 @@ export default function Projects() {
         </a>
       </div>
       <div className='project-img'>
-        <a href='projects/budget-app/index.html'>
+        <a href='https://codyboaz.github.io/budget-app/'>
           <img src={budgetAppImg} alt='Budget App' className='proj-img' />
           <p>Budget App</p>
         </a>
       </div>
       <div className='project-img'>
-        <a href='projects/dice-game/index.html'>
+        <a href='https://codyboaz.github.io/dice_game/'>
           <img src={diceGameImg} alt='Dice Game App' className='proj-img' />
           <p>Dice Game</p>
         </a>
       </div>
       <div className='project-img'>
-        <a href='projects/rgb-game/colorGame.html'>
+        <a href='https://codyboaz.github.io/rgb_game/'>
           <img src={colorGameImg} alt='Color Game App' className='proj-img' />
           <p>Color Game</p>
         </a>
       </div>
       <div className='project-img'>
-        <a href='projects/favorite-movies/fresh_tomatoes.html'>
+        <a href='https://codyboaz.github.io/favorite-movie-website/'>
           <img src={favoriteMovieImg} alt='Favorite Movies Website' className='proj-img' />
           <p>Favorite Movies Website</p>
         </a>
