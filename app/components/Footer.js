@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -7,13 +8,13 @@ export default function Footer() {
       <ul>
         <li>
           <a href='https://www.linkedin.com/in/codyboaz'>
-            <div className='fontawesome-linkedin-sign blue-background'></div>
+            <FaLinkedin color='#0174b3' size={50} />
             <p>LinkedIn</p>
           </a>
         </li>
         <li>
           <a href='https://github.com/codyboaz'>
-            <div className='fontawesome-github purple-background'></div>
+            <FaGithub color='000' size={50} />
             <p>GitHub</p>
           </a>
         </li>
