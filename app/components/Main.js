@@ -1,11 +1,11 @@
 import React from 'react'
-
+import santaCruzImg from '../images/santacruz.png'
 export default function Main() {
   return (
     <React.Fragment>
       <div className='row main-banner'>
         <div className='col-12'>
-          <img src='app/images/santacruz.png' alt='Image of Its beach in Santa Cruz California' />
+          <img src={santaCruzImg} alt='Image of Its beach in Santa Cruz California' />
         </div>
       </div>
       <div className='row main-text'>

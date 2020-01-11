@@ -1,9 +1,10 @@
 import React from 'react'
+import profileImg from '../images/profile.png'
 
 export default function Header() {
   return (
     <div className='row main-header'>
-      <div className='col-6'><img src='app/images/profile.png' className='portfolio-img' alt='Picture of Cody Boaz' />
+      <div className='col-6'><img src={profileImg} className='portfolio-img' alt='Picture of Cody Boaz' />
       </div>
       <div className='col-6'>
         <div className='header-text'>
