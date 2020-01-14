@@ -1,4 +1,4 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect subdomain to primary domain
-https://codyboaz.com/cody https://www.codyboaz.com/ 301!
+https://www.codyboaz.com/test https://www.codyboaz.com/ 301!

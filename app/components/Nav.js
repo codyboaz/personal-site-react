@@ -1,4 +1,6 @@
 import React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import resumePDF from '../CodyBoazResume.pdf'
 
 
 export default class Nav extends React.Component {
@@ -27,10 +29,10 @@ export default class Nav extends React.Component {
         </a>
         <nav className={this.state.closed ? 'nav close' : 'nav'}>
           <ul className='nav-list'>
-            <li className='nav-item'><a href='#'>Home</a></li>
-            <li className='nav-item'><a href='#projects'>Projects</a></li>
-            <li className='nav-item'><a href='resume/CodyBoazResume.pdf'>Resume</a></li>
-            <li className='nav-item'><a href='#contact'>Contact Info</a></li>
+            <li className='nav-item'><AnchorLink href='#'>Home</AnchorLink></li>
+            <li className='nav-item'><AnchorLink href='#projects'>Projects</AnchorLink></li>
+            <li className='nav-item'><a href={resumePDF} target='_blank'>Resume</a></li>
+            <li className='nav-item'><AnchorLink href='#contact'>Contact Info</AnchorLink></li>
           </ul>
         </nav>
       </div>
