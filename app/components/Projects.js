@@ -13,7 +13,7 @@ export default function Projects() {
         <h2>Projects</h2>
       </div>
       <div className='project-img'>
-        <a href='https://wonderful-shockley-b7c15a.netlify.com/'>
+        <a href='https://github-battle-1214.netlify.com/'>
           <img src={githubBattleImg} alt='Github Battle Website' className='proj-img' />
           <p>Github Battle</p>
         </a>
