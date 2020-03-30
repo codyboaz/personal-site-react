@@ -5,6 +5,7 @@ import budgetAppImg from '../images/budget.png'
 import diceGameImg from '../images/dice.png'
 import colorGameImg from '../images/colorGame.png'
 import hackerNews from '../images/hacker-news.png'
+import simonSays from '../images/simon-says.png'
 
 export default function Projects() {
   return (
@@ -22,6 +23,12 @@ export default function Projects() {
         <a href='https://hacker-news-1214.netlify.com/'>
           <img src={hackerNews} alt='Hacker News Clone Website' className='proj-img' />
           <p>Hacker News Clone</p>
+        </a>
+      </div>
+      <div className='project-img'>
+        <a href='https://simon-says-1214.netlify.com/'>
+          <img src={simonSays} alt='Simon Says Game Website' className='proj-img' />
+          <p>Simon Says</p>
         </a>
       </div>
       <div className='project-img'>
