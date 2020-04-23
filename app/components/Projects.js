@@ -1,4 +1,5 @@
 import React from 'react'
+import myReadsImg from '../images/my-reads.png'
 import githubBattleImg from '../images/github-battle.png'
 import yelpCampImg from '../images/yelpCamp.png'
 import budgetAppImg from '../images/budget.png'
@@ -12,6 +13,12 @@ export default function Projects() {
     <div className='row projects'>
       <div className='col-12' id='projects'>
         <h2>Projects</h2>
+      </div>
+      <div className='project-img'>
+        <a href='https://my-reads-1214.netlify.app/'>
+          <img src={myReadsImg} alt='My Reads Website' className='proj-img' />
+          <p>My Reads</p>
+        </a>
       </div>
       <div className='project-img'>
         <a href='https://github-battle-1214.netlify.com/'>
