@@ -1,28 +1,33 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: './app/index.js',
+  entry: "./src/index.tsx",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index_bundle.js'
+    path: path.resolve(__dirname, "dist"),
+    filename: "index_bundle.js"
+  },
+  resolve: {
+    extensions: [".js", ".jsx", ".json", ".ts", ".tsx"]
   },
   module: {
     rules: [
-      { test: /\.js$/, use: 'babel-loader' },
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-      { test: /\.(pdf|png|svg|jpg|gif)$/, use: 'file-loader?name=[name].[ext]' }
+      {
+        test: /\.(ts|tsx)$/,
+        use: "awesome-typescript-loader"
+      },
+      { test: /\.js$/, use: "babel-loader" },
+      { test: /\.css$/, use: ["style-loader", "css-loader"] },
+      { test: /\.(pdf|png|svg|jpg|gif)$/, use: "file-loader?name=[name].[ext]" }
     ]
   },
-  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+  mode: process.env.NODE_ENV === "production" ? "production" : "development",
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'app/index.html',
-      favicon: 'app/images/headerImg.ico'
+      template: "src/index.html",
+      favicon: "src/images/headerImg.ico"
     }),
-    new CopyPlugin([
-      { from: '_redirects' }
-    ])
+    new CopyPlugin([{ from: "_redirects" }])
   ]
-}
+};
