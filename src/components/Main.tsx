@@ -1,5 +1,6 @@
 import React from "react";
 import santaCruzImg from "../images/santacruz.png";
+
 const Main = () => {
   return (
     <>

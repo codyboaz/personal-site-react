@@ -8,8 +8,15 @@ import colorGameImg from "../images/colorGame.png";
 import hackerNewsImg from "../images/hacker-news.png";
 import simonSaysImg from "../images/simon-says.png";
 
+export type projectInfo = {
+  name: string;
+  link: string;
+  imgSrc: any;
+  alt: string;
+};
+
 const Projects = () => {
-  const project = [
+  const project: projectInfo[] = [
     {
       name: "My Reads",
       link: "https://my-reads-1214.netlify.app",
@@ -59,6 +66,7 @@ const Projects = () => {
       alt: "Color Game App"
     }
   ];
+
   return (
     <div className="row projects">
       <div className="col-12" id="projects">
